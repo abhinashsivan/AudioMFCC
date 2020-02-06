@@ -1,2 +1,2 @@
 # AudioMFCC
-finding mfcc values for a recorded audio
+#Finding mfcc values for a recorded audio
