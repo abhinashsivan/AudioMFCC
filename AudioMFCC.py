@@ -13,9 +13,9 @@ seconds = 3  # Duration of recording
 
 myrecording = sd.rec(int(seconds * fs), samplerate=fs, channels=2)
 sd.wait()  # Wait until recording is finished
-write('/home/ash/Desktop/output.wav', fs, myrecording)  # Save as WAV file 
+write('output.wav', fs, myrecording)  # Save as WAV file 
 
-audio_path='/home/ash/Desktop/output.wav'
+audio_path='output.wav'
 
 #audio time series as a numpy array to x
 #default sampling rate(sr) of 22KHZ mono
@@ -29,7 +29,7 @@ print(x.shape, sr)
 
 lr.load(audio_path, sr=44100)
 
-#ampl vs time grpah kanikan.. normal plot aan ith
+#ampl vs time graph
 #window size
 plt.figure(figsize=(5, 5))
 plt.title('AMLPI VS TIME')
@@ -40,13 +40,13 @@ plt.show()
 plt.close()
 
 
-#mfcc feature edukan
+#mfcc feature
 mfccs = librosa.feature.mfcc(x, sr=sr)
 print '\nmfcc shape\n'
 print mfccs.shape
 
 print type(mfccs)
-#mfcc array kanikan
+#mfcc array
 print mfccs
 
 mat=mfccs
