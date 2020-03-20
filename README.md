@@ -1,2 +1,2 @@
 # AudioMFCC
-#Finding mfcc values for a recorded audio
+This repo contains python code for finding mfcc values for a wav file and one for inverse mfcc feature, that is to get audio from mfcc features.
